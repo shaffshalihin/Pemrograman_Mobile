@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Field input pertama -->
+    <EditText
+        android:id="@+id/inputField1"
+        android:layout_width="395dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/spinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Input 1"
+        android:inputType="number" />
+
+    <!-- Field input kedua untuk KPK dan FPB -->
+    <EditText
+        android:id="@+id/inputField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputField1"
+        android:layout_margin="16dp"
+        android:hint="Input 2"
+        android:inputType="number"
+        android:visibility="gone"/> <!-- default to gone -->
+
+    <!-- Field input kedua untuk Kubus -->
+    <EditText
+        android:id="@+id/inputField3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputField2"
+        android:layout_margin="16dp"
+        android:hint="Input 3"
+        android:inputType="number"
+        android:visibility="gone"/> <!-- default to gone -->
+
+    <!-- Tombol untuk menghitung -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="180dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/inputField3"
+        android:layout_centerHorizontal="true"
+        android:text="Hitung" />
+
+    <!-- Hasil operasi -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/resultPrimaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+</RelativeLayout>

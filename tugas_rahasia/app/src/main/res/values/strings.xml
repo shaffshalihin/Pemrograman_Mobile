@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">tugasRahasia</string>
+
+    <string-array name="operations_array">
+        <item>KPK</item>
+        <item>FPB</item>
+        <item>Prima</item>
+        <item>Kubus</item>
+    </string-array>
+
+</resources>
